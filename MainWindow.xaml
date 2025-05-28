@@ -1,0 +1,20 @@
+﻿<Window x:Class="hegedusm_filmek.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hegedusm_filmek"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="558,0,0,10"/>
+        <Button Content="Lekérdez" Margin="90,334,583,52"/>
+        <Label x:Name="lbFilmAzon" Content="-" Margin="424,63,291,318"/>
+        <TextBox x:Name="tb1" TextWrapping="Wrap" Width="120" Margin="30,20,650,379"/>
+        <TextBox x:Name="tb2" TextWrapping="Wrap" Width="120" Margin="176,20,504,379"/>
+        <TextBox x:Name="tb3" TextWrapping="Wrap" Width="120" Margin="30,72,650,327"/>
+        <TextBox x:Name="tb4" TextWrapping="Wrap" Width="120" Margin="176,81,504,318"/>
+        <TextBox x:Name="tb5" TextWrapping="Wrap" Width="120" Margin="30,140,650,259"/>
+        <Button Content="Módosít" Margin="344,334,318,52"/>
+    </Grid>
+</Window>

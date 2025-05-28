@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="558,0,0,10"/>
-        <Button Content="Lekérdez" Margin="90,334,583,52"/>
-        <Label x:Name="lbFilmAzon" Content="-" Margin="424,63,291,318"/>
-        <TextBox x:Name="tb1" TextWrapping="Wrap" Width="120" Margin="30,20,650,379"/>
-        <TextBox x:Name="tb2" TextWrapping="Wrap" Width="120" Margin="176,20,504,379"/>
-        <TextBox x:Name="tb3" TextWrapping="Wrap" Width="120" Margin="30,72,650,327"/>
-        <TextBox x:Name="tb4" TextWrapping="Wrap" Width="120" Margin="176,81,504,318"/>
-        <TextBox x:Name="tb5" TextWrapping="Wrap" Width="120" Margin="30,140,650,259"/>
-        <Button Content="Módosít" Margin="344,334,318,52"/>
+        <ListBox x:Name="lbAdatok" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="558,0,0,10"/>
+        <Button Content="Lekérdez" Margin="90,334,583,52" Click="Button_Click"/>
+        <Label x:Name="lbFilmAzon" Content="-" Margin="210,227,506,154"/>
+        <TextBox x:Name="tb1" TextWrapping="Wrap" Margin="30,20,629,379"/>
+        <TextBox x:Name="tb2" TextWrapping="Wrap" Margin="303,20,318,379"/>
+        <TextBox x:Name="tb3" TextWrapping="Wrap" Margin="30,81,629,318"/>
+        <TextBox x:Name="tb4" TextWrapping="Wrap" Margin="303,81,318,318"/>
+        <TextBox x:Name="tb5" TextWrapping="Wrap" Width="120" Margin="192,149,488,250"/>
+        <Button Content="Módosít" Margin="344,334,318,52" Click="Button_Click_1"/>
     </Grid>
 </Window>
